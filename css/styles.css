@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #333; */
+    position: relative;
+}
+
+
+
+.logo a {
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    /* gap: 1px; */
+    
+}
+
+.nav-links li {
+  
+    display: inline;
+}
+
+.nav-links a {
+    color:  rgb(41, 41, 41);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    border: 1px solid rgb(41, 41, 41);
+    padding: 10px 45px;
+    border-radius: 4px;
+    
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    background-color: #444; /* Tambahkan warna latar belakang saat hover */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+.carousel-section {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+.section-header {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    height: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.section-header{
+    text-align: center;
+    margin-top: 30px;
+}
+.cards-section {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-section .section-header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Agar card-card tersebar merata */
+    gap: 20px; /* Memberikan jarak antar card */
+    width: 80%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    height: 550px; /* Mengatur tinggi card menjadi 550px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Sedikit mengangkat card saat hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    margin-bottom: 15px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 400px; /* Mengatur tinggi gambar dalam card */
+    object-fit: cover; /* Memastikan gambar proporsional */
+    border-radius: 10px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #ffffff;
+    gap: 40px;
+}
+
+.form-container, .output-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-header, .output-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender-options {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: baseline;
+    
+}
+
+.gender-options label {
+    margin-right: 20px; /* Memberikan jarak antar label */
+    font-weight: normal; /* Mengatur font-weight agar konsisten dengan input lain */
+    
+}
+
+.gender-options input {
+    margin-right: 10px;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    flex: 1;
+    padding: 20px;
+}
+
+#output p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+        border-top: 1px solid #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .logo {
+        flex: 1;
+    }
+    
+    .carousel-item img {
+        height: auto; /* Pastikan gambar tetap proporsional */
+    }
+    .carousel{
+        height: auto;
+    }
+    .cards-container {
+        flex-direction: column;
+        height: auto; /* Tinggi otomatis saat di layar kecil */
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-section{
+        flex-direction: column;
+        align-items: unset;
+    }
+
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Course RS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        
+            <h1>Romi Sandy</h1>
+       
+        <div class="menu-icon" id="menu-icon">
+            <span>&#9776;</span> <!-- Ikon menu hamburger -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <section class="carousel-section">
+        <h2 class="section-header">Hi <span id="userName"></span>! Welcome to My Website</h2>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="https://cdn.dribbble.com/userupload/14140753/file/original-ebb1700f30ce0fa60caa17fcd03cc5c8.jpg?resize=1024x768" alt="Image 1">
+                <img src="https://cdn.dribbble.com/userupload/15662820/file/original-a02c3c5e94f7680442df1789e08ac51b.jpg?resize=1024x768" alt="Image 2">
+                <img src="https://cdn.dribbble.com/userupload/3731029/file/original-b6736baa9e3ffcd4c17228f52aacd7f7.png?resize=1024x768" alt="Image 3">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    
+    <div>
+        <h2 class="section-header">Our Services</h2>
+    </div>
+
+    
+
+    <section class="cards-section">
+        
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://cdn.dribbble.com/userupload/9811880/file/original-7b52c337a5b706427bdb870e77a2e898.png?resize=1024x768" alt="Service 1 Image">
+                </div>
+                <div class="card-content">
+                    <h3>App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://cdn.dribbble.com/userupload/12816032/file/original-734f128b31f4f697d748eff59ffa4d2d.jpg?resize=1024x768" alt="Service 2 Image">
+                </div>
+                <div class="card-content">
+                    <h3>Branding</h3>
+                    <p>Phasellus vitae suscipit justo. Mauris pharetra felis at libero dignissim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://cdn.dribbble.com/userupload/4533076/file/original-b561d61f2a984638eb1a7cfa9e5f049d.png?resize=1024x768" alt="Service 3 Image">
+                </div>
+                <div class="card-content">
+                    <h3>Product</h3>
+                    <p>Donec ac fringilla turpis, eget varius justo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2 class="form-header">Contact Us</h2>
+            <form id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="gender">Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button class="form-button"type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="output-container">
+            <h2 class="output-header">Submitted Data</h2>
+            <div id="output"></div>
+        </div>
+    </section>
+    
+    <hr>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget malesuada turpis.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Pekanbaru, Indonesia</p>
+                <p>Email: romysandy1@gmail.com</p>
+                <p>Phone: 0823-8495-4323</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Romi Sandy. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
